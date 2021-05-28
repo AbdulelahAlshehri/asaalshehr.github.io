@@ -4,6 +4,35 @@ You can use the [editor on GitHub](https://github.com/asaalshehr/asaalshehr.gith
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<div class="sharebuttons">
+  <hr />
+  <ul>
+    <li>
+      <p class="sharetitle"> Share this: </p>
+    </li>
+    <li class="reddit">
+      <a href="http://www.reddit.com/submit?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape }}" target="_blank">
+        {% include social/share-icon-reddit.svg %}
+      </a>
+    </li>
+    <li class="hn">
+      <a href="http://news.ycombinator.com/submitlink?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&t={{ page.title | default:"" | uri_escape}}" target="_blank">
+        {% include social/share-icon-hn.svg %}
+      </a>
+    </li>
+    <li class="twitter">
+      <a href="https://twitter.com/intent/tweet?via=USERNAME&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank">
+        {% include social/share-icon-twitter.svg %}
+      </a>
+    </li>
+    <li class="linkedin">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank">
+        {% include social/share-icon-linkedin.svg %}
+      </a>
+    </li>
+  </ul>
+</div>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
